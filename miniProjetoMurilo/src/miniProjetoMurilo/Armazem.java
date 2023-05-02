@@ -1,53 +1,39 @@
 package miniProjetoMurilo;
 
 public class Armazem {
-	private int tamanho = 1;
-	private Patrimonio[] lista = new Patrimonio[tamanho];
-	private String pesquisa;
+	    private Patrimonio patrimonio[];
+	    private int tamanho ;
 	
-	public Armazem() {
-	}
-	
-	public void adicionarPatrimonio(Patrimonio p) {
-		p = lista[tamanho] = p;
-		int qtd = tamanho +1;
-		setTamanho(qtd);
-	}
-	public void setPatrimonio(Patrimonio p, int i) {
-		this.lista[i] = p;
-	}
-	public String getPesquisa() {
-		return pesquisa;
-	}
-	public void setPesquisa(String pesquisa) {
-		this.pesquisa = pesquisa;
-	}
-	public String mostrarIventario() {
-		String saida = "***** Lista de Alunos Matriculados ***** \n" ;
-		for(int i = 0; i < tamanho; i++) {
-			System.out.println(lista[i]);
-			saida = saida + "\n"+ lista[i].getNome();
+		public Armazem() {
+		patrimonio = new Patrimonio [120];
+		tamanho = 0;
+	    }
+		public boolean addPatrimonio (Patrimonio c) {
+			if( tamanho < 120) {
+				patrimonio [ tamanho ] = c;
+				tamanho ++;
+				return true ;
+				} else {
+					return false ;
+				}
 		}
-		return saida;
-	}	
-	public String encontrarPatrimonio() {
-		Patrimonio resultado = lista[0];
-		for(int i = 0; i < lista.length; i++) {
-			if(pesquisa == lista[i].getNome()) {
-				resultado = lista[i];
+		public String mostrarIventario() {
+			String saida = "\n  ***** Patrimonios ***** \n" ;
+			for(int i = 0; i < tamanho; i++) {
+				saida = saida + "\n"+ patrimonio[i].Imprimir();
 			}
+			return saida;
+		}	
+		public String procurarPatrimonio(String buscador) {
+			String resposta = "\n  *****Resultado da pesquisa***** \n";
+			for(int i = 0; i < tamanho; i++) {
+				if(buscador == patrimonio[i].getNome()) {
+					resposta = resposta + "\n" + patrimonio[i].Imprimir();
+				}
+			}
+			return resposta;
 		}
-		return resultado.getNome();
-	}
-
-	public int getTamanho() {
-		return tamanho;
-	}
-
-	public void setTamanho(int tamanho) {
-		this.tamanho = tamanho;
-	}
-	
-	
-	
 }
+	 
+
+		

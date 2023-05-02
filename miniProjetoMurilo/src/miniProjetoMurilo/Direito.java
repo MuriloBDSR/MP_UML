@@ -1,10 +1,8 @@
 package miniProjetoMurilo;
 
-public class Intangivel extends Patrimonio{
-	private String tipo = "Inatangivel";
-
-	
-	public Intangivel(String n, String a, double v) {	
+public class Direito extends Patrimonio {
+	private String tipo = "Direito";
+	public Direito(String n, String a, double v) {	
 		nome = n;
 		anotacoes = a;
 		valor = v;
@@ -37,6 +35,4 @@ public class Intangivel extends Patrimonio{
 				"; tipo: " + tipo;
 	}
 
-	
-	
 }

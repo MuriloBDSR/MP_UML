@@ -3,7 +3,7 @@ package miniProjetoMurilo;
 abstract class Patrimonio {
 	public String nome;
 	public String anotacoes;
-	public int valor;
+	public double valor;
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -17,7 +17,7 @@ abstract class Patrimonio {
 	public String getAnotacoes() {
 		return anotacoes;
 	}
-	public void setValor(int valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 	public double getValor() {
