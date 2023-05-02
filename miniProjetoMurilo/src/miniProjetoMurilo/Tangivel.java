@@ -2,12 +2,14 @@ package miniProjetoMurilo;
 
 public class Tangivel extends Patrimonio{
 	private String tipo = "Tangivel";
+	private String local;
 	private int quantidade;
 	
-	public Tangivel(String n, String a, double v, int q) {	
+	public Tangivel(String n, String l,String a, double v, int q) {	
 		nome = n;
 		anotacoes = a;
 		valor = v;
+		local = l;
 		quantidade = q;
 	}
 
@@ -50,11 +52,12 @@ public class Tangivel extends Patrimonio{
 	}
 
 	public String Imprimir() {
-		return "Nome: "+ this.getNome() + 
-				"; Anotacoes: "+ this.getAnotacoes() +
-				"; Valor: "+ this.getValor() +
-				"; tipo: " + tipo +
-				"; quantidade: "+ quantidade;
+		return "Nome: "+ nome + 
+				"; local: " + local+
+				"; Anotacoes: "+ anotacoes +
+				"; Valor: "+ valor +
+				"; quantidade: "+ quantidade +
+				"; tipo: " + tipo;
 	}
 
 }

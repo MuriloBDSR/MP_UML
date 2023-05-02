@@ -5,17 +5,17 @@ public class Teste {
 		
 		Armazem armazem = new Armazem();
 			
-			armazem.addPatrimonio(new Intangivel("Patente", " do bico de mamadeira", 350));
-			armazem.addPatrimonio(new Tangivel("Barraco","em Itaqua", 350000, 1));
-			armazem.addPatrimonio(new Direito("Entrega","da entrga do bico ", 5));
-			armazem.addPatrimonio(new Tangivel("Dienheiro","em reais", 7357.83, 1));
-			armazem.addPatrimonio(new Obrigacao("Eduarda","pela hora extra", 70, 5));
-			armazem.addPatrimonio(new Direito("Entrega","da entrga do copo ", 5));
+			armazem.addPatrimonio(new Intangivel("Patente", "do bico de mamadeira", 350));
+			armazem.addPatrimonio(new Tangivel("Barraco","em Itaqua", "Bem velho", 350000, 1));
+			armazem.addPatrimonio(new Tangivel("Apartamento","no Guaruja","em Sao Paulo", 50000000, 1));
+			armazem.addPatrimonio(new Tangivel("Dienheiro","no cofre", "em reais", 7357.83, 1));
+			armazem.addPatrimonio(new Tangivel("Carros","na garagem", "", 70, 2));
+			armazem.addPatrimonio(new Intangivel("Patente","de um site na internet", 700));
 
 			
 			System.out.println(armazem.mostrarIventario());
 			
-			System.out.println(armazem.procurarPatrimonio("Entrega"));	
+			System.out.println(armazem.procurarPatrimonio("Patente"));	
 		}
 
 }
