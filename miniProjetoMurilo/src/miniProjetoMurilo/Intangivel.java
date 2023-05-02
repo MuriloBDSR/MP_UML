@@ -4,44 +4,35 @@ public class Intangivel extends Patrimonio{
 	private String tipo = "Inatangível";
 
 	
-	public Intangivel() {	
+	public Intangivel(String n, String a, int v) {	
+		nome = n;
+		anotacoes = a;
+		valor = v;
 	}
-
-	@Override
-	void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 		
 	}
-
-	@Override
-	String getNome() {
+	public String getNome() {
 		return nome;
 	}
-
-	@Override
-	void setAnotacoes(String anotacoes) {
+	public void setAnotacoes(String anotacoes) {
 		this.anotacoes = anotacoes;
 		
 	}
-
-	@Override
-	String getAnotacoes() {
+	public String getAnotacoes() {
 		return anotacoes;
 	}
-
-	@Override
-	void setValor(double valor) {
+	public void setValor(int valor) {
 		this.valor = valor;		
 	}
-
-	@Override
-	double getValor() {
+	/*public double getValor() {
 		return valor;
-	}
+	}*/
 	public String Imprimir() {
-		return "Nome: "+ this.getNome() + 
-				"; Anotações: "+ getAnotacoes() +
-				"; Valor: "+ getValor() +
+		return "Nome: "+ nome + 
+				"; Anotações: "+ anotacoes +
+				"; Valor: "+ valor +
 				"; tipo: " + tipo;
 	}
 

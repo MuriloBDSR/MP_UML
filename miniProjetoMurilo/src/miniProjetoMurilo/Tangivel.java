@@ -2,46 +2,59 @@ package miniProjetoMurilo;
 
 public class Tangivel extends Patrimonio{
 	private String tipo = "Tangível";
+	private int quantidade;
 	
-	public Tangivel() {	
+	public Tangivel(String n, String a, int v) {	
+		nome = n;
+		anotacoes = a;
+		valor = v;
 	}
 
 	@Override
-	void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 		
 	}
 
 	@Override
-	String getNome() {
+	public String getNome() {
 		return nome;
 	}
 
 	@Override
-	void setAnotacoes(String anotacoes) {
+	public void setAnotacoes(String anotacoes) {
 		this.anotacoes = anotacoes;
 		
 	}
 
 	@Override
-	String getAnotacoes() {
+	public String getAnotacoes() {
 		return anotacoes;
 	}
 
 	@Override
-	void setValor(double valor) {
+	public void setValor(int valor) {
 		this.valor = valor;		
 	}
 
 	@Override
-	double getValor() {
+	public double getValor() {
 		return valor;
 	}
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+
 	public String Imprimir() {
 		return "Nome: "+ this.getNome() + 
-				"; Anotações: "+ getAnotacoes() +
-				"; Valor: "+ getValor() +
-				"; tipo: " + tipo;
+				"; Anotações: "+ this.getAnotacoes() +
+				"; Valor: "+ this.getValor() +
+				"; tipo: " + tipo +
+				"; quntidade: "+ quantidade;
 	}
 
 }
