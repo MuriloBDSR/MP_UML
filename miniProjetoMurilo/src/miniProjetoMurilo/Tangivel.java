@@ -51,13 +51,20 @@ public class Tangivel extends Patrimonio{
 		this.quantidade = quantidade;
 	}
 
-	public String Imprimir() {
+	public String imprimir() {
 		return "Nome: "+ nome + 
 				"; local: " + local+
 				"; Anotacoes: "+ anotacoes +
 				"; Valor: "+ valor +
 				"; quantidade: "+ quantidade +
 				"; tipo: " + tipo;
+	}
+	public void alterar(String n, String l,String a, double v, int q) {
+		nome = n;
+		anotacoes = a;
+		valor = v;
+		local = l;
+		quantidade = q;		
 	}
 
 }

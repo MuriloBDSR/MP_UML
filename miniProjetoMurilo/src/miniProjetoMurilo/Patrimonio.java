@@ -23,7 +23,10 @@ abstract class Patrimonio {
 	public double getValor() {
 		return valor;
 	}
-	public String Imprimir() {
+	public String imprimir() {
 		return null;
-	}	
+	}
+	public void alterar() {
+		
+	}
 }

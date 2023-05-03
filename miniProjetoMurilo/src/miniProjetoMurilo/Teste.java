@@ -4,7 +4,7 @@ public class Teste {
 	public static void main(String[] args) {
 		
 		Armazem armazem = new Armazem();
-			
+			 
 			armazem.addPatrimonio(new Intangivel("Patente", "do bico de mamadeira", 350));
 			armazem.addPatrimonio(new Tangivel("Barraco","em Itaqua", "Bem velho", 350000, 1));
 			armazem.addPatrimonio(new Tangivel("Apartamento","no Guaruja","em Sao Paulo", 50000000, 1));

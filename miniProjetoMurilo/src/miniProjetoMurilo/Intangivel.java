@@ -27,14 +27,20 @@ public class Intangivel extends Patrimonio{
 	public void setValor(double valor) {
 		this.valor = valor;		
 	}
-	/*public double getValor() {
+	public double getValor() {
 		return valor;
-	}*/
-	public String Imprimir() {
+	}
+	public String imprimir() {
 		return "Nome: "+ nome + 
 				"; Anotacoes: "+ anotacoes +
 				"; Valor: "+ valor +
 				"; tipo: " + tipo;
+	}
+	public void alterar(String n, String a, double v) {	
+		nome = n;
+		anotacoes = a;
+		valor = v;
+		
 	}
 
 	

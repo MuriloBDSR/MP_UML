@@ -20,7 +20,7 @@ public class Armazem {
 		public String mostrarInventario() {
 			String saida = "\n  ***** Patrimonios ***** \n" ;
 			for(int i = 0; i < tamanho; i++) {
-				saida = saida + "\n"+ patrimonio[i].Imprimir();
+				saida = saida + "\n"+ patrimonio[i].imprimir();
 			}
 			return saida;
 		}	
@@ -28,7 +28,7 @@ public class Armazem {
 			String resposta = "\n  *****Resultado da pesquisa***** \n";
 			for(int i = 0; i < tamanho; i++) {
 				if(buscador == patrimonio[i].getNome()) {
-					resposta = resposta + "\n" + patrimonio[i].Imprimir();
+					resposta = resposta + "\n" + patrimonio[i].imprimir();
 				}
 			}
 			return resposta;
