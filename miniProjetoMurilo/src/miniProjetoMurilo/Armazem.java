@@ -17,7 +17,7 @@ public class Armazem {
 					return false ;
 				}
 		}
-		public String mostrarIventario() {
+		public String mostrarInventario() {
 			String saida = "\n  ***** Patrimonios ***** \n" ;
 			for(int i = 0; i < tamanho; i++) {
 				saida = saida + "\n"+ patrimonio[i].Imprimir();

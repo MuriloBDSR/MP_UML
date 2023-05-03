@@ -13,7 +13,7 @@ public class Teste {
 			armazem.addPatrimonio(new Intangivel("Patente","de um site na internet", 700));
 
 			
-			System.out.println(armazem.mostrarIventario());
+			System.out.println(armazem.mostrarInventario());
 			
 			System.out.println(armazem.procurarPatrimonio("Patente"));	
 		}
